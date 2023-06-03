@@ -3,6 +3,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import FacebookIcon from "@mui/icons-material/Facebook";
+import cert from "./../Assets/cert.png";
 
 const SOCIAL_LINKS = {
   email: "https://example.com/email",
@@ -33,6 +34,7 @@ export default function Header({ projectsRef, contactRef }) {
         <FacebookIcon
           onClick={() => handleIconClick(SOCIAL_LINKS["facebook"])}
         />
+        <a target="_blank" href="https://www.credly.com/badges/a428a2ea-82c4-4d3e-a5cf-f492757b3403/public_url"><img src={cert}/></a>
       </div>
       <div className="headerPage">
         <button onClick={scrollToProjects}>Projects</button>

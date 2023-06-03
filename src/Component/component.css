@@ -11,6 +11,11 @@
   margin: 10px;
   gap: 10px;
   cursor: pointer;
+  height: 70px;
+}
+
+.headerSocial img {
+  max-height: 70px;
 }
 
 .headerPage {
