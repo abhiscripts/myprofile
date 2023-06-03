@@ -12,14 +12,17 @@ function App() {
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
   return (
-    <div className="App">
+    <div className="app-container">
       <Header projectsRef={projectsRef} contactRef={contactRef} />
-      <About />
-      <div ref={projectsRef}>
-        <Projects />
-      </div>
-      <div ref={contactRef}>
-        <Contact />
+      <div className="content-container">
+        <About />
+
+        <div ref={projectsRef}>
+          <Projects />
+        </div>
+        <div ref={contactRef}>
+          <Contact />
+        </div>
       </div>
       <Footer />
       <ScrollToTop />
