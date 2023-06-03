@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { useRef } from "react";
+import "./App.css";
+import Header from "./Component/Header";
+import About from "./Component/About";
+import Contact from "./Component/Contact";
+import Footer from "./Component/Footer";
+import Projects from "./Component/Projects";
+import "./Component/component.css";
+import ScrollToTop from "./Component/ScrollToTop";
 
 function App() {
+  const projectsRef = useRef(null);
+  const contactRef = useRef(null);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header projectsRef={projectsRef} contactRef={contactRef} />
+      <About />
+      <div ref={projectsRef}>
+        <Projects />
+      </div>
+      <div ref={contactRef}>
+        <Contact />
+      </div>
+      <Footer />
+      <ScrollToTop />
     </div>
   );
 }

@@ -1,0 +1,181 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(59, 59, 59);
+}
+
+.headerSocial {
+  display: flex;
+  color: white;
+  margin: 10px;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.headerPage {
+  display: flex;
+}
+
+/* Additional styling for buttons */
+.headerPage button {
+  margin-left: 10px;
+  border: none;
+  font-weight: bold;
+  background-color: transparent;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.about {
+  background-color: teal;
+  height: 1000px;
+}
+
+.about p,
+h1 {
+  color: white;
+}
+
+.about img {
+  border-radius: 50%;
+  width: 500px;
+  padding: 50px;
+}
+
+.projects {
+  display: flex;
+  height: 1000px;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(32, 88, 114);
+}
+
+.headerContainer {
+  margin-bottom: 20px;
+}
+
+.projects h2 {
+  color: white;
+}
+
+.moreProject {
+  font-weight: bold;
+  background-color: transparent;
+  color: white;
+  margin-top: 80px;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  border: solid 2px white;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.card {
+  flex-basis: calc(50% - 10px);
+  max-width: calc(50% - 10px);
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+.dialogTitle {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 16px;
+}
+
+.dialogContent {
+  padding: 16px;
+}
+
+.contact-container {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #4f746d;
+  height: 600px;
+}
+.contact-form-container {
+    margin: 0 auto;
+    max-width: 50%;
+    padding: 20px;
+  }
+
+.contact-header {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.contact-form label {
+    color: white;
+}
+
+.contact-form textarea {
+  height: 100px;
+}
+
+.submit-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+.footer {
+    color: white;
+    background-color: black;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .scroll-to-top:hover {
+    background-color: rgb(202, 255, 255);
+  }
+  
