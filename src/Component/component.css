@@ -4,7 +4,6 @@
   align-items: center;
   background-color: rgb(59, 59, 59);
 }
-
 .headerSocial {
   display: flex;
   color: white;
@@ -14,7 +13,7 @@
 }
 
 .headerSocial img {
-  max-height: 100px;
+  max-height: 90px;
 }
 
 .headerPage {
