@@ -1,4 +1,5 @@
 import React from "react";
+import Skills from "./Skills";
 import me from "../Assets/me.jpg";
 
 export default function About() {
@@ -9,8 +10,9 @@ export default function About() {
       <h1>
         A Lead Fullstack Developer @Airbus
         <br />
-        Who knows Javascript, AWS (cloud), React, Python and Devops
+        With 7+ years of experience in Aircraft, Media and Automotive Domains.
       </h1>
+      <Skills/>
     </div>
   );
 }

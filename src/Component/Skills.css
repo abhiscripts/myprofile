@@ -1,0 +1,39 @@
+.skills-container {
+    width: 350px;
+    margin: auto; /* Add this line to move the component to the left */
+    padding-bottom: 20px;
+  }
+  
+  .skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .skill-name {
+    flex-grow: 1;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+  }
+  
+  .skill-bar {
+    width: 150px;
+    height: 15px;
+    background-color: white;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .skill-progress {
+    height: 100%;
+    background-color: #76c1ff;
+    border-radius: 5px;
+  }
+  
+  .skill-rating {
+    font-size: 14px;
+    font-weight: bold;
+    color: #76c1ff;
+  }
+  

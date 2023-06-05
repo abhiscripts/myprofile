@@ -2,14 +2,16 @@ import React from "react";
 import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import FacebookIcon from "@mui/icons-material/Facebook";
+import BurstModeIcon from '@mui/icons-material/BurstMode';
 import cert from "./../Assets/cert.png";
+import logo from "./../Assets/logo.png";
+import { maxHeight, style } from "@mui/system";
 
 const SOCIAL_LINKS = {
-  email: "https://example.com/email",
-  github: "https://example.com/github",
-  linkedin: "https://example.com/linkedin",
-  facebook: "https://example.com/facebook",
+  email: "mailto:abhishek.kc6@gmail.com",
+  github: "https://github.com/abhiscripts",
+  linkedin: "https://www.linkedin.com/in/abhishekchoudhary1/",
+  medium: "https://medium.com/@abhishek.kc6",
 };
 export default function Header({ projectsRef, contactRef }) {
   const handleIconClick = (url) => {
@@ -26,25 +28,34 @@ export default function Header({ projectsRef, contactRef }) {
   return (
     <div className="header">
       <div className="headerSocial">
-        <EmailIcon onClick={() => handleIconClick(SOCIAL_LINKS["email"])} />
+        <img src={logo} alt="logo" />
+        <EmailIcon
+          onClick={() => handleIconClick(SOCIAL_LINKS["email"])}
+          style={{ height: "100px" }}
+        />
         <LinkedInIcon
           onClick={() => handleIconClick(SOCIAL_LINKS["linkedin"])}
+          style={{ height: "100px" }}
         />
-        <GitHubIcon onClick={() => handleIconClick(SOCIAL_LINKS["github"])} />
-        <FacebookIcon
-          onClick={() => handleIconClick(SOCIAL_LINKS["facebook"])}
+        <GitHubIcon
+          onClick={() => handleIconClick(SOCIAL_LINKS["github"])}
+          style={{ height: "100px" }}
         />
-        <a
+        <BurstModeIcon
+          onClick={() => handleIconClick(SOCIAL_LINKS["medium"])}
+          style={{ height: "100px" }}
+        />
+      </div>
+      <div className="headerPage">
+        <button onClick={scrollToProjects}>Projects</button>
+        <button onClick={scrollToContact}>Contact Me</button>
+        {/* <a
           target="_blank"
           rel="noreferrer"
           href="https://www.credly.com/badges/a428a2ea-82c4-4d3e-a5cf-f492757b3403/public_url"
         >
           <img src={cert} alt="meta cert"/>
-        </a>
-      </div>
-      <div className="headerPage">
-        <button onClick={scrollToProjects}>Projects</button>
-        <button onClick={scrollToContact}>Contact Me</button>
+        </a> */}
       </div>
     </div>
   );
