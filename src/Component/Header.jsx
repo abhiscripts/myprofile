@@ -36,11 +36,10 @@ export default function Header({ projectsRef, contactRef }) {
         />
         <a
           target="_blank"
-          href="https://www.credly.com/badges/a428a2ea-82c4-4d3e-a5cf-f492757b3403/public_url"
           rel="noreferrer"
-          alt="meta cert"
+          href="https://www.credly.com/badges/a428a2ea-82c4-4d3e-a5cf-f492757b3403/public_url"
         >
-          <img src={cert} />
+          <img src={cert} alt="meta cert"/>
         </a>
       </div>
       <div className="headerPage">
