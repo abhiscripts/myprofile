@@ -34,7 +34,14 @@ export default function Header({ projectsRef, contactRef }) {
         <FacebookIcon
           onClick={() => handleIconClick(SOCIAL_LINKS["facebook"])}
         />
-        <a target="_blank" href="https://www.credly.com/badges/a428a2ea-82c4-4d3e-a5cf-f492757b3403/public_url"><img src={cert}/></a>
+        <a
+          target="_blank"
+          href="https://www.credly.com/badges/a428a2ea-82c4-4d3e-a5cf-f492757b3403/public_url"
+          rel="noreferrer"
+          alt="meta cert"
+        >
+          <img src={cert} />
+        </a>
       </div>
       <div className="headerPage">
         <button onClick={scrollToProjects}>Projects</button>
