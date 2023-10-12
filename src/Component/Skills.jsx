@@ -4,7 +4,7 @@ import "./Skills.css";
 const Skills = () => {
   return (
     <div className="skills-container">
-      <h2>Technical Skills</h2>
+      <h2>Technical Skills </h2>
       {skillsObject.map((skill) => {
         return (
           <div className="skill">
@@ -27,14 +27,14 @@ export default Skills;
 
 const skillsObject = [
   {
-    name: "AWS Cloud",
+    name: "System Design",
     width: "70%",
     rating: "7/10",
   },
   {
-    name: "Javascript",
-    width: "80%",
-    rating: "8/10",
+    name: "Cloud",
+    width: "70%",
+    rating: "7/10",
   },
   {
     name: "Devops",
@@ -48,8 +48,8 @@ const skillsObject = [
   },
   {
     name: "Nodejs",
-    width: "60%",
-    rating: "6/10",
+    width: "70%",
+    rating: "7/10",
   },
   {
     name: "My Sql",

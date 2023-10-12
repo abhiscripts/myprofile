@@ -2,6 +2,8 @@
     width: 350px;
     margin: auto; /* Add this line to move the component to the left */
     padding-bottom: 20px;
+    text-align: center;
+    border: 2px solid rgb(255, 255, 255); /* Add a black border to the certification div */
   }
   
   .skill {
