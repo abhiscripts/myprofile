@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import Skills from "./Skills";
+import Certification from "./Certification";
+import airbus from "./../Assets/airbus.png";
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -15,6 +18,8 @@ const Contact = () => {
 
   return (
     <div className="contact-container">
+            <Certification/>
+        <Skills/>
       <h2 className="contact-header">Contact Me</h2>
       <div className="contact-form-container">
       <form className="contact-form" onSubmit={handleSubmit}>
@@ -65,6 +70,7 @@ const Contact = () => {
         <button type="submit" className="submit-button">Submit</button>
       </form>
       </div>
+            <img src={airbus} alt="Airbus" height="50px"/>
     </div>
   );
 };

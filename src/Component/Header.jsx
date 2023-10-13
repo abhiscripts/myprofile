@@ -3,7 +3,6 @@ import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import BurstModeIcon from "@mui/icons-material/BurstMode";
-import airbus from "./../Assets/airbus.png";
 
 const SOCIAL_LINKS = {
   email: "mailto:abhishek.kc6@gmail.com",
@@ -42,11 +41,10 @@ export default function Header({ projectsRef, contactRef }) {
             onClick={() => handleIconClick(SOCIAL_LINKS["medium"])}
             style={{ height: "100px" }}
           />
-          <img src={airbus} alt="Airbus" height="80px"/>
         </div>
       <div className="headerPage">
-        <button onClick={scrollToProjects}>Projects</button>
-        <button onClick={scrollToContact}>Contact Me</button>
+        <button onClick={scrollToProjects}>Innovations</button>
+        <button onClick={scrollToContact}>Know Me</button>
       </div>
     </div>
   );

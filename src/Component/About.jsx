@@ -1,7 +1,7 @@
 import React from "react";
-import Skills from "./Skills";
+// import Skills from "./Skills";
 import me from "../Assets/me.jpg";
-import Certification from "./Certification";
+// import Certification from "./Certification";
 
 
 export default function About() {
@@ -19,8 +19,6 @@ export default function About() {
          and I leverage my skills in AWS, Node.js, React, Python, and TypeScript to deliver high-quality products and solutions.
          </p></div>
       </h1>
-      <Certification/>
-        <Skills/>
     </div>
   );
 }

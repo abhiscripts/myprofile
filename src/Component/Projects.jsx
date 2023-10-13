@@ -7,10 +7,11 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
-import curr from '../Assets/curr.png';
-import ll from '../Assets/ll.png';
+import bs from '../Assets/bs.jpeg';
+//import ll from '../Assets/ll.png';
 import arc from '../Assets/arc.jpeg';
-import fd from "../Assets/fd.png";
+import ai from "../Assets/ai.png";
+import ru from "../Assets/ru.png";
 
 const Projects = () => {
   const [open, setOpen] = useState(false);
@@ -28,10 +29,10 @@ const Projects = () => {
   const cards = [
     {
       id: 1,
-      title: "Food Delivery MERN",
-      imageUrl: fd,
-      shortDescription: "https://github.com/abhiscripts/FoodDeliveryTask",
-      longDescription: "MERN full stack app \n for backend service to start : from the backend directory run npm install and then npm run dev in your terminal. \nfor frontend service to start : from the frontend directory run npm install and then run npm start in your terminal. in frontend you have [user login, user signup and admin login] Once you do user signup you will be able to do user login with your user credentials.",
+      title: "Innersource",
+      imageUrl: ru,
+      shortDescription: "Reusable Components",
+      longDescription: "A reusablity Idea \n for sustainable development in Airbus : Currently support node, java, react and python \nfor Multiple team to consume and contribute : To help achieve DIY developments.",
     },
     {
       id: 2,
@@ -42,24 +43,24 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: "Currency Coverter",
-      imageUrl: curr,
-      shortDescription: "React + Hooks -> https://github.com/abhiscripts/react_redux_hooks_ex",
-      longDescription: "Web Page -> https://compassionate-dubinsky-0e2353.netlify.app/",
+      title: "AI Chat Bot",
+      imageUrl: ai,
+      shortDescription: "A ready to use and integrate bot with all G site APPs",
+      longDescription: "A ready to use and integrate bot with all Google site apps is a pre-packaged chatbot solution that seamlessly interfaces with a wide range of Google applications and services, such as Gmail, Google Calendar, Google Drive, and more. This pre-built bot is immediately deployable, requiring minimal development effort, and offers a convenient and familiar user experience as it operates within the Google ecosystem. Users can engage with the chatbot through various mediums, including text and voice commands, enhancing productivity and automation of tasks. Additionally, customization options may be available to align the bot with specific user or business needs while ensuring data security, efficiency, and continuous updates for a reliable performance.",
     },
     {
       id: 4,
-      title: "Little Lemon restaurant",
-      imageUrl: ll,
-      shortDescription: "CSS + JS + HTML -> https://github.com/abhiscripts/LittleLemonWeb",
-      longDescription: "WebPage -> https://abhiscripts.github.io/LittleLemonWeb/",
+      title: "FE/ BE Bootstrapper",
+      imageUrl: bs,
+      shortDescription: "A ready to use bootstrapper project in FE BE to reduce development time",
+      longDescription: "It refers to a readily available framework or template that serves as a starting point for front-end and back-end development, aiming to expedite the overall development process. This project provides pre-configured structures, components, and functionalities that can be easily integrated into the front-end and back-end systems, thereby minimizing the need for building these components from scratch. Developers can leverage this solution to accelerate the initial setup, streamline coding efforts, and facilitate rapid prototyping, ultimately enabling more efficient and time-effective development workflows.",
     },
   ];
 
   return (
     <div className="projects">
       <div className="projectHeader">
-        <h2>Featured Projects</h2>
+        <h2>Featured Innovations</h2>
       </div>
       <div className="cardContainer">
         {cards.map((card) => (
